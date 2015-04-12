@@ -41,16 +41,13 @@ public class CountDownLatchDemo {
 
         @Override
         public void run() {
-
             try {
                 Thread.sleep(timeToStart);
-
             } catch (InterruptedException e) {
+                System.err.println(e);
             }
-
             System.out.println(name + "is Up");
             latch.countDown();
-
         }
     }
 
