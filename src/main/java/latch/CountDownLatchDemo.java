@@ -46,8 +46,9 @@ public class CountDownLatchDemo {
             } catch (InterruptedException e) {
                 System.err.println(e);
             }
-            System.out.println(name + "is Up");
+            System.out.println(name + "is starting");
             latch.countDown();
+            System.out.println(name + "is up");
         }
     }
 
