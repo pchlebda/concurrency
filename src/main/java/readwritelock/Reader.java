@@ -21,7 +21,7 @@ public class Reader extends Thread {
             String[] keys = dictionary.getKeys();
             for (String key : keys) {
                 String value = dictionary.get(key);
-                System.out.println(key + " : " + value);
+            //    System.out.println(key + " : " + value);
             }
             try {
                 Thread.sleep(DEFAULT_TIME_SLEEP);
